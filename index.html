@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>todo-list</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>todo-list</title>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAk7g3zZ23a2kUShwPDk5zsi9hq0TeqwvI",
+      authDomain: "mi-fabuloso-proyecto-58913.firebaseapp.com",
+      databaseURL: "https://mi-fabuloso-proyecto-58913.firebaseio.com",
+      projectId: "mi-fabuloso-proyecto-58913",
+      storageBucket: "mi-fabuloso-proyecto-58913.appspot.com",
+      messagingSenderId: "218501979850"
+    };
+    firebase.initializeApp(config);
+    var db = firebase.firestore();
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
